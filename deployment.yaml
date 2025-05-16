@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: react-app
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: react-app
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: react-app
-          image: imrishav/gitops01:604ac3b39a717bbceb7e0386debaed67fd7857bb
+          image: subratapixel/test-pipeline-react
           imagePullPolicy: Always
           ports:
             - containerPort: 80
