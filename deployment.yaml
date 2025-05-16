@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: react-app
-          image: subratapixel/test-pipeline-react:a82d180df1a668fe304c687a15e3418b500715da
+          image: subratapixel/test-pipeline-react:7ef98402494aebb0b54c115766489850dc00f18e
           imagePullPolicy: Always
           ports:
             - containerPort: 80
